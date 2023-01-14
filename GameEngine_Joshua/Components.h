@@ -1,38 +1,25 @@
 #pragma once
 #include "Engine.h"
-<<<<<<< HEAD
-=======
+
 #include <fstream>
 #include "Tile.h"
 #include "Interface/States.h"
->>>>>>> c035129 (Created Tile map Struct)
 
 struct Transform
 {
 public:
 	ECS_DECLARE_TYPE;
-<<<<<<< HEAD
-	float xPos, yPos, rotation, xSpeed, ySpeed, xSpeedMod, ySpeedMod;
-	bool bColliding = false;
-
-	Transform(float newX, float newY, float xSpeed = 0.0f, float ySpeed = 0.0f, float rotation = 0.0f) : xPos(newX), yPos(newY)
-=======
 	float xPos, yPos, rotationAngle, xSpeed, ySpeed, xSpeedMod, ySpeedMod, rotationSpeed;
 	bool bColliding = false;
 
 	Transform(float newX, float newY, float xSpeed = 0.0f, float ySpeed = 0.0f, float rotationAngle = 0.0f, float rotationSpeed = 0.0f) : xPos(newX), yPos(newY)
->>>>>>> c035129 (Created Tile map Struct)
 	{
 		this->xSpeed = newX;
 		this->ySpeed = newY;
 		this->xSpeedMod = xSpeed;
 		this->ySpeedMod = ySpeed;
-<<<<<<< HEAD
-		this->rotation = rotation;
-=======
 		this->rotationAngle = rotationAngle;
 		this->rotationSpeed = rotationSpeed;
->>>>>>> c035129 (Created Tile map Struct)
 	}
 	void Move()
 	{
@@ -42,11 +29,6 @@ public:
 			this->yPos += ySpeed;
 		}
 	}
-<<<<<<< HEAD
-		
-=======
-
->>>>>>> c035129 (Created Tile map Struct)
 };
 ECS_DEFINE_TYPE(Transform);
 
@@ -76,12 +58,8 @@ public:
 	int totalColumns;
 	int totalRows;
 	float currentTime, nextFrameTime;
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> c035129 (Created Tile map Struct)
 	bool bFacingRight;
+
 	Animator(int newWidth, int newHeight, float timeBetweenFrames, int columns, int rows)
 	{
 		this->spriteWidth = newWidth;
@@ -95,13 +73,7 @@ public:
 		this->bFacingRight = true;
 
 	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> c035129 (Created Tile map Struct)
 };
-
 ECS_DEFINE_TYPE(Animator);
 
 
@@ -138,13 +110,10 @@ public:
 	{
 		this->leftEdge = x;
 		this->rightEdge = x + width;
-		this->bottomEdge = y;
-		this->topEdge = y + height;
+		this->bottomEdge = y + height;
+		this->topEdge = y;
 	}
 };
-<<<<<<< HEAD
-ECS_DEFINE_TYPE(BoxCollider);
-=======
 ECS_DEFINE_TYPE(BoxCollider);
 
 struct TileMap
@@ -314,4 +283,3 @@ public:
 	}
 };
 ECS_DEFINE_TYPE(TileMap);
->>>>>>> c035129 (Created Tile map Struct)

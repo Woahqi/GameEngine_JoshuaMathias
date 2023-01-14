@@ -1,37 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Systems">
-      <UniqueIdentifier>{9dd70901-ec90-4ad6-af20-83ef1a9be8c3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Interface">
-      <UniqueIdentifier>{41ff4ccc-1198-4097-a169-6f11742fe171}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Interface\GUI_Components">
-      <UniqueIdentifier>{c2a56595-946c-490a-9b79-882297e5ddb6}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Systems\RenderingSystem.cpp">
-      <Filter>Systems</Filter>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Systems\AnimationSystem.cpp">
       <Filter>Systems</Filter>
@@ -45,40 +19,40 @@
     <ClCompile Include="Systems\PhysicsSystem.cpp">
       <Filter>Systems</Filter>
     </ClCompile>
-    <ClCompile Include="Interface\States.cpp">
-      <Filter>Interface</Filter>
+    <ClCompile Include="Systems\RenderingSystem.cpp">
+      <Filter>Systems</Filter>
     </ClCompile>
     <ClCompile Include="Interface\GUI_Components\Button.cpp">
-      <Filter>Interface\GUI_Components</Filter>
+      <Filter>Interface</Filter>
     </ClCompile>
     <ClCompile Include="Interface\GUI_Components\ButtonMap.cpp">
-      <Filter>Interface\GUI_Components</Filter>
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\MainCamera.cpp">
+      <Filter>Interface</Filter>
     </ClCompile>
     <ClCompile Include="Interface\PauseMenu.cpp">
       <Filter>Interface</Filter>
     </ClCompile>
-<<<<<<< HEAD
-=======
-    <ClCompile Include="Interface\MainCamera.cpp">
+    <ClCompile Include="Interface\States.cpp">
       <Filter>Interface</Filter>
     </ClCompile>
-    <ClCompile Include="Tile.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
->>>>>>> c035129 (Created Tile map Struct)
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Engine.h">
+    <ClInclude Include="Components.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ECS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Components.h">
+    <ClInclude Include="Engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Systems\RenderingSystem.h">
-      <Filter>Systems</Filter>
+    <ClInclude Include="Tile.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Systems\AnimationSystem.h">
       <Filter>Systems</Filter>
@@ -92,26 +66,40 @@
     <ClInclude Include="Systems\PhysicsSystem.h">
       <Filter>Systems</Filter>
     </ClInclude>
-    <ClInclude Include="Interface\States.h">
-      <Filter>Interface</Filter>
+    <ClInclude Include="Systems\RenderingSystem.h">
+      <Filter>Systems</Filter>
     </ClInclude>
     <ClInclude Include="Interface\GUI_Components\Button.h">
-      <Filter>Interface\GUI_Components</Filter>
+      <Filter>Interface</Filter>
     </ClInclude>
     <ClInclude Include="Interface\GUI_Components\ButtonMap.h">
-      <Filter>Interface\GUI_Components</Filter>
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\MainCamera.h">
+      <Filter>Interface</Filter>
     </ClInclude>
     <ClInclude Include="Interface\PauseMenu.h">
       <Filter>Interface</Filter>
     </ClInclude>
-<<<<<<< HEAD
-=======
-    <ClInclude Include="Interface\MainCamera.h">
+    <ClInclude Include="Interface\States.h">
       <Filter>Interface</Filter>
     </ClInclude>
-    <ClInclude Include="Tile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
->>>>>>> c035129 (Created Tile map Struct)
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e81a872c-b04e-420e-a219-37390a6e3855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e4dc5799-20ac-4b4b-826e-256c26d67c8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems">
+      <UniqueIdentifier>{36524580-3764-410d-a103-ea4a26bd1aee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{92042c5e-a414-43db-ad0e-a49e7436c145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{755d2f7c-4b9e-4c1e-8033-2eb9798f020d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

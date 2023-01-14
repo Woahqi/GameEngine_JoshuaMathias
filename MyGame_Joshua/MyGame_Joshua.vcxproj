@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{e2be4e52-d73a-484c-a514-59613b313b43}</ProjectGuid>
-    <RootNamespace>MyGameJoshua</RootNamespace>
+    <RootNamespace>MyGame_Joshua</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -74,13 +74,10 @@
     <IncludePath>$(SolutionDir)Packages\SFML-2.5.1\include;$(SolutionDir)GameEngine_Joshua;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Packages\SFML-2.5.1\lib;$(SolutionDir)GameEngine_Joshua\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
-<<<<<<< HEAD
-=======
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(SolutionDir)Packages\SFML-2.5.1\include;$(SolutionDir)GameEngine_Joshua;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Packages\SFML-2.5.1\lib;$(SolutionDir)GameEngine_Joshua\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
->>>>>>> c035129 (Created Tile map Struct)
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -120,10 +117,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-<<<<<<< HEAD
-=======
       <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
->>>>>>> c035129 (Created Tile map Struct)
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

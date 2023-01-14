@@ -28,11 +28,6 @@ void PauseMenu::Update(sf::Event event, float deltatime, sf::RenderWindow* windo
 		{
 			States::setPausedState(false);
 			ButtonMap::GetMap()["RESUME"]->bClicked = false;
-<<<<<<< HEAD
-			
-=======
-
->>>>>>> c035129 (Created Tile map Struct)
 		}
 		if (ButtonMap::GetMap()["QUIT"]->bClicked == true)
 		{
@@ -40,11 +35,6 @@ void PauseMenu::Update(sf::Event event, float deltatime, sf::RenderWindow* windo
 			ButtonMap::GetMap()["RESUME"]->bClicked = false;
 		}
 	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> c035129 (Created Tile map Struct)
 }
 
 void PauseMenu::Render(sf::RenderWindow* window, float deltatime, sf::Vector2f resumePosition)
@@ -84,9 +74,6 @@ void PauseMenu::Render(sf::RenderWindow* window, float deltatime, sf::Vector2f r
 
 void PauseMenu::InitButtons()
 {
-<<<<<<< HEAD
-
-=======
 	sf::Vector2f size(125, 35);
 
 	ButtonMap::GetMap().insert(
@@ -105,14 +92,9 @@ void PauseMenu::InitButtons()
 		{
 			"QUIT", new Button(size, sf::Color(100, 100, 100, 255),"QUIT GAME")
 		});
->>>>>>> c035129 (Created Tile map Struct)
 }
 
 void PauseMenu::Quit(sf::RenderWindow* window)
 {
-<<<<<<< HEAD
-
-=======
 	window->close();
->>>>>>> c035129 (Created Tile map Struct)
 }

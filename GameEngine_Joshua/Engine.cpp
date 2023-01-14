@@ -1,4 +1,6 @@
 #include "Engine.h"
+
+
 Engine& Engine::GetInstance()
 {
 	static Engine instance;
@@ -21,21 +23,14 @@ void Engine::Start(sf::RenderWindow* win)
 
 	bQuit = false;
 	window = win;
-<<<<<<< HEAD
-=======
 	this->pauseMenu = new PauseMenu(win);
 	this->mainCamera = new MainCamera(sf::Vector2f(this->window->getSize().x / 2, this->window->getSize().y / 2));
->>>>>>> c035129 (Created Tile map Struct)
 	//Run the Program, as long as the window is Open
 	//Variable is Data (Integer, Booleans, CAN be another class/Instance), Function is an action (verbs etc) Add a () to the end of it
 	while (window->isOpen() == true) // -> is Equivalent to . for pointers , ex window.isopen = window->isOpen
 	{
 		Update();
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> c035129 (Created Tile map Struct)
 }
 
 Engine::Engine()
@@ -50,10 +45,6 @@ void Engine::Update()
 {
 	sf::Event event;
 	while (window->pollEvent(event) == true)
-<<<<<<< HEAD
-=======
-		
->>>>>>> c035129 (Created Tile map Struct)
 	{
 		// Close Requested Event
 		if (event.type == sf::Event::Closed)
@@ -61,20 +52,14 @@ void Engine::Update()
 			window->close();
 
 		}
-<<<<<<< HEAD
 	}
-	world->tick(10.0f);
-=======
-		this->pauseMenu->Update(event, 10.0f, this->window);
 
-	}
 	world->tick(10.0f);
 	this->mainCamera->Update(world, 10.0f, window);
+
 	if (States::getPausedState() == true)
 	{
-		this->OnPaused();
-
-		
+		this->OnPaused();	
 	}
 }
 
@@ -82,6 +67,4 @@ void Engine::OnPaused()
 {
 	
 	this->pauseMenu->Render(window, 10.0f, this->mainCamera->cameraView.getCenter());
-
->>>>>>> c035129 (Created Tile map Struct)
 }

@@ -3,9 +3,5 @@
 Player::Player(sf::Vector2f position) : Soldier("../debug/pics/player_1.png",position)
 {
 	entity->assign<InputController>();
-<<<<<<< HEAD
-=======
 	entity->get<Transform>()->rotationAngle = 0.005f;
->>>>>>> c035129 (Created Tile map Struct)
-	
 }

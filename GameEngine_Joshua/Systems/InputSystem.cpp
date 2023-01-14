@@ -7,14 +7,10 @@ InputSystem::InputSystem(sf::RenderWindow* window)
 
 void InputSystem::tick(ECS::World* world, float deltaTime)
 {
-<<<<<<< HEAD
-	GetKeyEvents(world);
-=======
 	if (States::getPausedState() == false)
 	{
 		GetKeyEvents(world);
 	}
->>>>>>> c035129 (Created Tile map Struct)
 }
 
 void InputSystem::GetKeyEvents(ECS::World* world)

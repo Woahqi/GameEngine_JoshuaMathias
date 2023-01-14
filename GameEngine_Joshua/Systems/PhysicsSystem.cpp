@@ -157,49 +157,7 @@ void PhysicsSystem::CheckCollisionSides(ECS::Entity* touchingEntity, ECS::Entity
 
 void PhysicsSystem::tick(ECS::World* world, float deltaTime)
 {
-<<<<<<< HEAD
-	// TODO: Paused state
-	world->each<BoxCollider, Sprite2D, Transform>(
-		[&](ECS::Entity* entity,
-			ECS::ComponentHandle<BoxCollider> collider,
-			ECS::ComponentHandle<Sprite2D> sprite,
-			ECS::ComponentHandle<Transform> transform
-			) -> void
-		{
-			collider->Update(transform->xPos, transform->yPos, sprite->picture.getTextureRect().width, sprite->picture.getTextureRect().height);
-		});
-
-	world->each<BoxCollider, Transform>(
-		[&](ECS::Entity* touchingEntity,
-			ECS::ComponentHandle<BoxCollider> touchingBox,
-			ECS::ComponentHandle<Transform> transform
-			) -> void
-		{
-			world->each<BoxCollider>(
-				[&](ECS::Entity* touchedEntity,
-					ECS::ComponentHandle<BoxCollider> touchedBox
-					) -> void
-				{
-					// Statement to avoid comparing the same entity to itself
-					if (touchingEntity->getEntityId() == touchedEntity->getEntityId() ||
-						IsColliding(touchingBox, touchedBox) == false)
-					{
-						return;
-					}
-
-					// Final collision check
-					CheckCollisionSides(touchingEntity, touchedEntity);
-				});
-		});
-
-	world->each<Transform>(
-		[&](ECS::Entity* entity,
-			ECS::ComponentHandle<Transform> transform
-			) -> void
-		{
-			transform->Move();
-		});
-=======
+	
 	if (States::getPausedState() == false)
 	{
 		// TODO: Paused state
@@ -244,5 +202,4 @@ void PhysicsSystem::tick(ECS::World* world, float deltaTime)
 				transform->Move();
 			});
 	}
->>>>>>> c035129 (Created Tile map Struct)
 }

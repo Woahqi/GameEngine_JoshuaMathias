@@ -34,8 +34,8 @@ int main(int argc, char* args[])
 	// 
 	//Create instances of entities
 
-	Entity player = Player(sf::Vector2f(300, 300));
-	Entity dummy = Dummy("../debug/pics/OrangeBox.png", sf::Vector2f(400, 400));
+	Entity *player = new Player(sf::Vector2f(300, 300));
+	Entity *dummy =  new Dummy("../debug/pics/OrangeBox.png", sf::Vector2f(400, 400));
 
 
 	

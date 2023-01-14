@@ -28,6 +28,5 @@ std::string Tile::ToString()
 {
     std::stringstream stringForm;
     stringForm << this->bColliding << " ";
-    return std::string();
     return stringForm.str();
 }

@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{741a7610-5dfb-4dcd-b9c1-9dc017129d95}</ProjectGuid>
-    <RootNamespace>GameEngineJoshua</RootNamespace>
+    <RootNamespace>GameEngine_Joshua</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -40,11 +40,8 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-<<<<<<< HEAD
     <ConfigurationType>Application</ConfigurationType>
-=======
     <ConfigurationType>StaticLibrary</ConfigurationType>
->>>>>>> c035129 (Created Tile map Struct)
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -75,21 +72,15 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-<<<<<<< HEAD
     <LibraryPath>$(LibraryPath)</LibraryPath>
-=======
     <LibraryPath>../Packages/SFML-2.5.1/lib;$(LibraryPath)</LibraryPath>
     <IncludePath>../Packages/SFML-2.5.1/include;$(IncludePath)</IncludePath>
->>>>>>> c035129 (Created Tile map Struct)
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>..\packages\sfml-2.5.1\include;$(IncludePath)</IncludePath>
     <LibraryPath>..\packages\sfml-2.5.1\lib;$(LibraryPath)</LibraryPath>
-<<<<<<< HEAD
     <OutDir>$(SolutionDir)$(ProjectName)\lib</OutDir>
-=======
     <OutDir>$(SolutionDir)$(ProjectName)\lib\</OutDir>
->>>>>>> c035129 (Created Tile map Struct)
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -153,10 +144,7 @@
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="Interface\GUI_Components\Button.cpp" />
     <ClCompile Include="Interface\GUI_Components\ButtonMap.cpp" />
-<<<<<<< HEAD
-=======
     <ClCompile Include="Interface\MainCamera.cpp" />
->>>>>>> c035129 (Created Tile map Struct)
     <ClCompile Include="Interface\PauseMenu.cpp" />
     <ClCompile Include="Interface\States.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -165,10 +153,7 @@
     <ClCompile Include="Systems\MovementSystem.cpp" />
     <ClCompile Include="Systems\PhysicsSystem.cpp" />
     <ClCompile Include="Systems\RenderingSystem.cpp" />
-<<<<<<< HEAD
-=======
     <ClCompile Include="Tile.cpp" />
->>>>>>> c035129 (Created Tile map Struct)
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Components.h" />
@@ -176,10 +161,7 @@
     <ClInclude Include="Engine.h" />
     <ClInclude Include="Interface\GUI_Components\Button.h" />
     <ClInclude Include="Interface\GUI_Components\ButtonMap.h" />
-<<<<<<< HEAD
-=======
     <ClInclude Include="Interface\MainCamera.h" />
->>>>>>> c035129 (Created Tile map Struct)
     <ClInclude Include="Interface\PauseMenu.h" />
     <ClInclude Include="Interface\States.h" />
     <ClInclude Include="Systems\AnimationSystem.h" />
@@ -187,10 +169,7 @@
     <ClInclude Include="Systems\MovementSystem.h" />
     <ClInclude Include="Systems\PhysicsSystem.h" />
     <ClInclude Include="Systems\RenderingSystem.h" />
-<<<<<<< HEAD
-=======
     <ClInclude Include="Tile.h" />
->>>>>>> c035129 (Created Tile map Struct)
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

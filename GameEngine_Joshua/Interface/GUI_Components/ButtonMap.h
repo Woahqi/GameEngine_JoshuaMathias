@@ -2,10 +2,8 @@
 #include "../../Engine.h"
 #include "Button.h"
 
-<<<<<<< HEAD
-=======
+
 class Button;
->>>>>>> c035129 (Created Tile map Struct)
 
 class ButtonMap
 {
